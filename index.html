@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge APP</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+
+   <div id="header">
+    <marquee behavior="" direction="">RECHARGE CARD APP</marquee>
+   </div>
+
+    <div class="div1"></div>
+
+   <section>
+    <div class="div2">
+         <label for="network">SELECT NETWORK:</label>
+         <select name="NETWORK" id="networks">
+            <option disabled selected value="">SELECT MOBILE NETWORK</option>
+            <option value="MTN">MTN</option>
+            <option value="AIRTEL">AIRTEL</option>
+            <option value="GLO">GLO</option>
+            <option value="9MOBILE">9MOBILE</option>
+         </select>
+
+
+         <label for="amount">AMOUNT:</label>
+         <select name="amount" id="amounts">
+            <option disabled selected value="">SELECT AMOUNT</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+            <option value="5000">5000</option>
+         </select>
+
+         <label for="code">PIN:</label>
+         <input type="text" name="code" id="codeInp">
+         <button class="btn btn-outline-primary" id="genBtn">GENERATE PIN</button>
+         <button class="btn btn-outline-danger" id="saveBtn">SAVE PIN</button>
+    </div>
+
+    <div class="hidden text-center fs-3 text-secondary" id="modal"> RECHARGE SUCCESSFUL !!!</div>
+
+    <div class="hidden text-center fs-3 text-secondary" id="used"> THIS CARD HAS BEEN USED !!!</div>
+
+
+    <div class="recharges" id="recharger"></div>
+
+   </section>
+ 
+   <section>
+    <table class="table my-5 mx-2">
+        <thead>
+            <tr>
+                <th scope="col">S/N</th>
+                <th scope="col">NETWORK OPERATOR</th>
+                <th scope="col">AMOUNT</th>
+                <th scope="col">PIN</th>
+                <th scope="col">RECHARGE CODE</th>
+                <th scope="col">STATUS</th>
+                <th scope="col">DATE/TIME CREATED</th>
+                <th scope="col">DELETE</th>
+                
+            </tr>
+        </thead>
+
+        <tbody id="tables">
+        
+        </tbody>
+    </table>
+
+
+   
+   </section>
+
+    <script src="./app.js"></script>
+    <script src="./bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: teal;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#header{
+    font-size: 60px;
+}
+.div1{
+    border: 3px solid;
+    margin: 15px;
+}
+
+.div2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: 15px 30px;
+}
+
+.delBTN{
+    background-color: purple;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid purple;
+    padding: 10px 10px;
+}
+
+.rechargeBtn{
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #800080;
+    padding: 10px 20px 10px 20px;
+}
+
+.recharges{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 100px;
+}
+
+#rechargeInput{
+    padding: 15px;
+}
+
+#codeInp{
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+}
+
+#amounts{
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+}
+
+#networks{
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+}
+
+#modal{
+    background-color: green;
+    width: 300px;
+    height: 40vh;
+    display: none;
+    
+}
+
+#used{
+    background-color: red;
+    width: 300px;
+    height: 40vh;
+    display: none;
+}
